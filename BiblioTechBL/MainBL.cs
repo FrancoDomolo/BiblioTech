@@ -16,7 +16,7 @@ namespace BiblioTechBL
 
         public void AddLibro(Libro nuovoLibro)
         {
-            throw new NotImplementedException();
+            _mockLibri.Create(nuovoLibro);
         }
 
         public void AddPrestito(Prestito nuovoPrestito)
@@ -46,7 +46,7 @@ namespace BiblioTechBL
 
         public Libro GetLibroById(int id)
         {
-            throw new NotImplementedException();
+            return _mockLibri.GetById(id);
         }
 
         public Prestito GetPrestitoById(int id)
@@ -66,7 +66,7 @@ namespace BiblioTechBL
 
         public void RemoveLibroById(int id)
         {
-            throw new NotImplementedException();
+           _mockLibri.DeleteByID(id);
         }
 
         public void RemovePrestitoById(int id)
