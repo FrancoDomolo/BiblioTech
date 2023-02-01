@@ -9,20 +9,35 @@ using System.Threading.Tasks;
 namespace BiblioTechDAL
 {
     public class MockPrestiti : ICRUDPrestito
+
     {
+        private List<Prestito> prestitoList = new List<Prestito>();
         public void Create(Prestito nuovo)
         {
-            throw new NotImplementedException();
+            prestitoList.Add(nuovo);
         }
 
         public void DeleteByID(int id)
         {
-            throw new NotImplementedException();
+            foreach (Prestito item in prestitoList)
+            {
+                if (item.Id == id)
+                {
+                    prestitoList.Remove(item);
+                }
+            }
         }
 
         public Prestito GetById(int id)
         {
-            throw new NotImplementedException();
+            foreach (Prestito item in prestitoList)
+            {
+                if (item.Id == id)
+                {
+                    return item;
+                }
+            }
+            return null;
         }
 
         public void Update(Prestito aggiornato)
