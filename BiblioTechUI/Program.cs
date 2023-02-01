@@ -13,8 +13,6 @@ namespace BiblioTechUI
         {
             TypeColor("\t---BiblioTech---\t\n", ConsoleColor.Green);
             TypeColor("Choose an option", ConsoleColor.Cyan);
-
-
         }
     }
 }
