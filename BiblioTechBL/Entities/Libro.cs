@@ -16,14 +16,14 @@ namespace BiblioTechBL.Entities
        
         public string Autore { get; private set; }
        
-        public DateOnly AnnoPubblicazione { get; private set; }
+        public int AnnoPubblicazione { get; private set; }
         
         public string Genere { get; private set; }
 
         public bool IsAvailable { get; private set; }
 
 
-        public Libro(int id, string nome, string autore, DateOnly annoPubblicazione, string genere, bool isAvailable)
+        public Libro(int id, string nome, string autore, int annoPubblicazione, string genere, bool isAvailable)
         {
             Id = id;
             Nome = nome;
