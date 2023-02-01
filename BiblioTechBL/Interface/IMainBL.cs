@@ -13,5 +13,17 @@ namespace BiblioTechBL.Interface
         Iscritto GetIscrittoById(int id);
         Libro GetLibroById(int id);
         Prestito GetPrestitoById(int id);
+
+        void AddIscritto(Iscritto nuovoIscritto);
+        void AddLibro(Libro nuovoLibro);
+        void AddPrestito(Prestito nuovoPrestito);
+
+        void RemoveIscrittoById(int id);
+        void RemoveLibroById(int id);
+        void RemovePrestitoById(int id);
+
+        void UpdateIscritto(Iscritto update);
+
+
     }
 }
