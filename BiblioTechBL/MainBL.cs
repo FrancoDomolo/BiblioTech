@@ -11,7 +11,7 @@ namespace BiblioTechBL
 
         public void AddIscritto(Iscritto nuovoIscritto)
         {
-            throw new NotImplementedException();
+            _mockIscritti.Create(nuovoIscritto);
         }
 
         public void AddLibro(Libro nuovoLibro)
@@ -41,7 +41,7 @@ namespace BiblioTechBL
 
         public Iscritto GetIscrittoById(int id)
         {
-            throw new NotImplementedException();
+            return _mockIscritti.GetById(id);
         }
 
         public Libro GetLibroById(int id)
