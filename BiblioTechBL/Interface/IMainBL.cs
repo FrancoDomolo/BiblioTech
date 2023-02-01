@@ -18,8 +18,8 @@ namespace BiblioTechBL.Interface
         Libro GetLibroById(int id);
         void AddLibro(Libro nuovoLibro);
         void RemoveLibroById(int id);
-        List<Libro> GetDisponibili();
-        List<Libro> GetInPrestito();
+        IEnumerable<Libro> GetDisponibili();
+        IEnumerable<Libro> GetInPrestito();
 
 
 
@@ -27,7 +27,7 @@ namespace BiblioTechBL.Interface
         void AddPrestito(Prestito nuovoPrestito);
         void RemovePrestitoById(int id);
         List<Iscritto> GetRitardatari();
-        List<Iscritto> GetInattvi();
+        List<Iscritto> GetInattivi();
 
 
     }

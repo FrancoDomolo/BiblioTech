@@ -24,19 +24,25 @@ namespace BiblioTechBL
             _mockPrestiti.Create(nuovoPrestito);
         }
 
-        public List<Libro> GetDisponibili()
+        public IEnumerable<Libro> GetDisponibili()
         {
-            throw new NotImplementedException();
+            return _mockLibri.Fetch(x => x.IsAvailable == true);
         }
 
-        public List<Iscritto> GetInattvi()
+        public List<Iscritto> GetInattivi()
         {
-            throw new NotImplementedException();
+            IEnumerable<Prestito> prestitiInattivi = _mockPrestiti.Fetch(x => (DateTime.Now.Month - x.DataInizio.Month) > 2);
+            List<Iscritto> inattivi = new List<Iscritto>();
+            foreach (Prestito prestito in prestitiInattivi)
+            {
+                inattivi.Add(prestito.Utente);
+            }
+            return inattivi;
         }
 
-        public List<Libro> GetInPrestito()
+        public IEnumerable<Libro> GetInPrestito()
         {
-            throw new NotImplementedException();
+            return _mockLibri.Fetch(x => x.IsAvailable == false);
         }
 
         public Iscritto GetIscrittoById(int id)
@@ -56,12 +62,19 @@ namespace BiblioTechBL
 
         public List<Iscritto> GetRitardatari()
         {
-            throw new NotImplementedException();
+            IEnumerable<Prestito> prestitiScaduti = _mockPrestiti.Fetch(x => DateOnly.FromDateTime(DateTime.Now) > x.DataScadenza);
+            List<Iscritto> ritardatari = new List<Iscritto>();
+            foreach (Prestito prestito in prestitiScaduti)
+            {
+                ritardatari.Add(prestito.Utente);
+            }
+            return ritardatari;
+
         }
 
         public void RemoveIscrittoById(int id)
         {
-            throw new NotImplementedException();
+            _mockIscritti.DeleteByID(id);
         }
 
         public void RemoveLibroById(int id)
