@@ -10,8 +10,6 @@ namespace BiblioTechBL.Interface
 {
     public interface IMainBL
     {
-
-
         Iscritto GetIscrittoById(int id);
         void AddIscritto(Iscritto nuovoIscritto);
         void RemoveIscrittoById(int id);
