@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BiblioTechBL\BiblioTechBL.csproj" />
     <ProjectReference Include="..\UIUtils\UIUtils.csproj" />
   </ItemGroup>
 
