@@ -39,7 +39,12 @@ namespace BiblioTechDAL
             }
             return null;
         }
+        public IEnumerable<Prestito> Fetch(Func<Prestito, bool> filter = null)
+        {
+            if (filter != null)
+                return prestitoList.Where(filter);
 
-        
+            return prestitoList;
+        }
     }
 }

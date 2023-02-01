@@ -1,5 +1,6 @@
 ﻿using BiblioTechBL.Entities;
 using BiblioTechBL.Interface;
+using System.Net.Sockets;
 
 namespace BiblioTechDAL
 {
@@ -33,7 +34,13 @@ namespace BiblioTechDAL
             }
             return null;
         }
+        public IEnumerable<Iscritto> Fetch(Func<Iscritto, bool> filter = null)
+        {
+            if (filter != null)
+                return iscritti.Where(filter);
 
-        
+            return iscritti;
+        }
+
     }
 }

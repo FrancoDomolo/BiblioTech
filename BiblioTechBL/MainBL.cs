@@ -21,7 +21,7 @@ namespace BiblioTechBL
 
         public void AddPrestito(Prestito nuovoPrestito)
         {
-            throw new NotImplementedException();
+            _mockPrestiti.Create(nuovoPrestito);
         }
 
         public List<Libro> GetDisponibili()
@@ -51,7 +51,7 @@ namespace BiblioTechBL
 
         public Prestito GetPrestitoById(int id)
         {
-            throw new NotImplementedException();
+            return _mockPrestiti.GetById(id);
         }
 
         public List<Iscritto> GetRitardatari()
@@ -71,12 +71,7 @@ namespace BiblioTechBL
 
         public void RemovePrestitoById(int id)
         {
-            throw new NotImplementedException();
-        }
-
-        public void UpdateIscritto(Iscritto update)
-        {
-            throw new NotImplementedException();
+            _mockPrestiti.DeleteByID(id);
         }
     }
 }
