@@ -10,7 +10,6 @@ namespace BiblioTechBL.Interface
     {
         T GetById(int id);
         void Create(T nuovo);
-        void Update(T aggiornato);
         void DeleteByID(int id);
 
     }

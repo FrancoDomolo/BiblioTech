@@ -25,9 +25,6 @@ namespace BiblioTechDAL
             throw new NotImplementedException();
         }
 
-        public void Update(Libro aggiornato)
-        {
-            throw new NotImplementedException();
-        }
+        
     }
 }
