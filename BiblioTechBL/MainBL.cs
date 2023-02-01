@@ -5,6 +5,10 @@ namespace BiblioTechBL
 {
     public class MainBL : IMainBL
     {
+        private ICRUDIscritto _mockIscritti;
+        private ICRUDLibro _mockLibri;
+        private ICRUDPrestito _mockPrestiti;
+
         public void AddIscritto(Iscritto nuovoIscritto)
         {
             throw new NotImplementedException();
@@ -20,6 +24,21 @@ namespace BiblioTechBL
             throw new NotImplementedException();
         }
 
+        public List<Libro> GetDisponibili()
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Iscritto> GetInattvi()
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Libro> GetInPrestito()
+        {
+            throw new NotImplementedException();
+        }
+
         public Iscritto GetIscrittoById(int id)
         {
             throw new NotImplementedException();
@@ -31,6 +50,11 @@ namespace BiblioTechBL
         }
 
         public Prestito GetPrestitoById(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Iscritto> GetRitardatari()
         {
             throw new NotImplementedException();
         }

@@ -40,9 +40,6 @@ namespace BiblioTechDAL
             return null;
         }
 
-        public void Update(Prestito aggiornato)
-        {
-            throw new NotImplementedException();
-        }
+        
     }
 }

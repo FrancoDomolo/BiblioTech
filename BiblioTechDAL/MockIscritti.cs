@@ -34,9 +34,6 @@ namespace BiblioTechDAL
             return null;
         }
 
-        public void Update(Iscritto aggiornato)
-        {
-            throw new NotImplementedException();
-        }
+        
     }
 }
