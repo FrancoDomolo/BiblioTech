@@ -10,19 +10,27 @@ namespace BiblioTechBL.Interface
 {
     public interface IMainBL
     {
+
+
         Iscritto GetIscrittoById(int id);
-        Libro GetLibroById(int id);
-        Prestito GetPrestitoById(int id);
-
         void AddIscritto(Iscritto nuovoIscritto);
-        void AddLibro(Libro nuovoLibro);
-        void AddPrestito(Prestito nuovoPrestito);
-
         void RemoveIscrittoById(int id);
-        void RemoveLibroById(int id);
-        void RemovePrestitoById(int id);
-
         void UpdateIscritto(Iscritto update);
+
+
+        Libro GetLibroById(int id);
+        void AddLibro(Libro nuovoLibro);
+        void RemoveLibroById(int id);
+        List<Libro> GetDisponibili();
+        List<Libro> GetInPrestito();
+
+
+
+        Prestito GetPrestitoById(int id);
+        void AddPrestito(Prestito nuovoPrestito);
+        void RemovePrestitoById(int id);
+        List<Iscritto> GetRitardatari();
+        List<Iscritto> GetInattvi();
 
 
     }
