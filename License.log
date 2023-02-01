@@ -1,25 +1,26 @@
-    Time:2/1/2023 10:54:21 AM
+    ======  ======
+    Time:2/1/2023 2:35:29 PM
     Title: Initiate log
     Message: 
-    Time:2/1/2023 10:54:21 AM
+    Time:2/1/2023 2:35:29 PM
     Title: Initiate InternalManager
     Message: Trying to Validate License
-    Time:2/1/2023 10:54:21 AM
+    Time:2/1/2023 2:35:29 PM
     Title: Requesting EVT
     Message: EVTP
-    Time:2/1/2023 10:54:21 AM
+    Time:2/1/2023 2:35:29 PM
     Title: Requesting Validation
     Message: ILMValidate
-    Time:2/1/2023 10:54:21 AM
+    Time:2/1/2023 2:35:29 PM
     Title: LICENSER
     Message: FNF
-    Time:2/1/2023 10:54:22 AM
+    Time:2/1/2023 2:35:30 PM
     Title: Could not find file 'C:\ProgramData\Telerik\Hash.lic'.
     Message:    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
    at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
    at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
    at Telerik.Licensing.Licenser.ReadHashPass()
-    Time:2/1/2023 10:54:22 AM
+    Time:2/1/2023 2:35:30 PM
     Title: Could not find file 'C:\ProgramData\Telerik\Hash.lic'.
     Message:    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
    at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
